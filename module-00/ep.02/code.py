@@ -142,12 +142,12 @@ print("Batch tensor shape:", batch_tensor.shape)
 # NOTE: requires network access to openaipublic.blob.core.windows.net.
 # Run this section on Colab; it is blocked in the authoring sandbox.
 #
-# import tiktoken
-# enc = tiktoken.get_encoding("gpt2")
-# gpt2_tokens = enc.encode(sentence)
-# print("GPT-2 token count:", len(gpt2_tokens))
-# print("GPT-2 pieces:", [enc.decode([t]) for t in gpt2_tokens])
-# print("GPT-2 vocab size:", enc.n_vocab)
+import tiktoken
+enc = tiktoken.get_encoding("gpt2")
+gpt2_tokens = enc.encode(sentence)
+print("GPT-2 token count:", len(gpt2_tokens))
+print("GPT-2 pieces:", [enc.decode([t]) for t in gpt2_tokens])
+print("GPT-2 vocab size:", enc.n_vocab)
 
 # ---------------------------------------------------------------
 # 4.1 Vocabulary growth plot
